@@ -1,0 +1,57 @@
+name: OKX Alligator Watch
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      inst_type:
+        description: "OKX instrument type: SPOT or SWAP"
+        default: "SWAP"
+        required: false
+      inst_ids:
+        description: "Optional comma-separated instruments, for example BTC-USDT-SWAP,ETH-USDT-SWAP"
+        required: false
+      bars:
+        description: "Comma-separated OKX candle bars"
+        default: "1H,4H,1D"
+        required: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Test
+        run: go test ./...
+
+      - name: Generate report
+        env:
+          OKX_INST_TYPE: ${{ github.event.inputs.inst_type || 'SWAP' }}
+          OKX_INST_IDS: ${{ github.event.inputs.inst_ids || '' }}
+          OKX_BARS: ${{ github.event.inputs.bars || '1H,4H,1D' }}
+          OKX_QUOTE_CCY: USDT
+          OKX_CANDLE_LIMIT: "200"
+          OKX_MAX_INSTRUMENTS: "0"
+          OKX_CONCURRENCY: "2"
+          OKX_MIN_NOTIONAL_24H: "500000"
+          ALLIGATOR_SLEEP_THRESHOLD: "0.0015"
+          OUTPUT_DIR: reports
+        run: go run ./cmd/okx-alligator
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: okx-alligator-report
+          path: reports/
