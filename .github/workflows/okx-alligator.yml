@@ -21,11 +21,13 @@ jobs:
   watch:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -50,8 +52,39 @@ jobs:
           OUTPUT_DIR: reports
         run: go run ./cmd/okx-alligator
 
+      - name: Verify and publish summary
+        shell: bash
+        run: |
+          test -s reports/alligator-report.md
+          test -s reports/alligator-report.json
+          ls -lah reports
+          {
+            echo "## Report files"
+            echo
+            echo '```text'
+            ls -lah reports
+            echo '```'
+            echo
+            cat reports/alligator-report.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Upload report
         uses: actions/upload-artifact@v4
         with:
           name: okx-alligator-report
           path: reports/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/alligator-report.md reports/alligator-report.json
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+            exit 0
+          fi
+          git commit -m "Update OKX alligator report"
+          git push
