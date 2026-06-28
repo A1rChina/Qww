@@ -126,12 +126,27 @@ func (c *Client) Candles(ctx context.Context, instID, bar string, limit int) ([]
 		if err != nil {
 			return nil, fmt.Errorf("parse candle timestamp for %s: %w", instID, err)
 		}
+		openPrice, err := strconv.ParseFloat(row[1], 64)
+		if err != nil {
+			return nil, fmt.Errorf("parse open for %s: %w", instID, err)
+		}
+		highPrice, err := strconv.ParseFloat(row[2], 64)
+		if err != nil {
+			return nil, fmt.Errorf("parse high for %s: %w", instID, err)
+		}
+		lowPrice, err := strconv.ParseFloat(row[3], 64)
+		if err != nil {
+			return nil, fmt.Errorf("parse low for %s: %w", instID, err)
+		}
 		closePrice, err := strconv.ParseFloat(row[4], 64)
 		if err != nil {
 			return nil, fmt.Errorf("parse close for %s: %w", instID, err)
 		}
 		candles = append(candles, alligator.Candle{
 			Time:  time.UnixMilli(ts).UTC(),
+			Open:  openPrice,
+			High:  highPrice,
+			Low:   lowPrice,
 			Close: closePrice,
 		})
 	}
