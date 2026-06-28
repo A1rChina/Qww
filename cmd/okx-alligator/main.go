@@ -109,13 +109,16 @@ func run(ctx context.Context) error {
 		if rep.Items[i].Bar != rep.Items[j].Bar {
 			return barRank(rep.Items[i].Bar) < barRank(rep.Items[j].Bar)
 		}
+		if rep.Items[i].VisualStatus != rep.Items[j].VisualStatus {
+			return visualRank(rep.Items[i].VisualStatus) < visualRank(rep.Items[j].VisualStatus)
+		}
 		if rep.Items[i].WindowStatus != rep.Items[j].WindowStatus {
 			return windowRank(rep.Items[i].WindowStatus) < windowRank(rep.Items[j].WindowStatus)
 		}
 		if rep.Items[i].State != rep.Items[j].State {
 			return stateRank(rep.Items[i].State) < stateRank(rep.Items[j].State)
 		}
-		if rep.Items[i].WindowStatus == alligator.WindowCompressed {
+		if rep.Items[i].VisualStatus == alligator.VisualCoil || rep.Items[i].WindowStatus == alligator.WindowCompressed {
 			return rep.Items[i].SpreadPct < rep.Items[j].SpreadPct
 		}
 		return rep.Items[i].SpreadPct > rep.Items[j].SpreadPct
@@ -270,6 +273,25 @@ func barRank(bar string) int {
 	}
 }
 
+func visualRank(status alligator.VisualStatus) int {
+	switch status {
+	case alligator.VisualCoil:
+		return 0
+	case alligator.VisualPreBreakout:
+		return 1
+	case alligator.VisualFreshBreakout:
+		return 2
+	case alligator.VisualPullbackWatch:
+		return 3
+	case alligator.VisualExtended:
+		return 4
+	case alligator.VisualTrendRun:
+		return 5
+	default:
+		return 100
+	}
+}
+
 func windowRank(status alligator.WindowStatus) int {
 	switch status {
 	case alligator.WindowCompressed:
@@ -328,16 +350,17 @@ func renderMarkdown(rep report) string {
 	}
 
 	fmt.Fprintf(&b, "\n## Watch List\n\n")
-	fmt.Fprintf(&b, "| Timeframe | Instrument | 24h Notional | State | Window | Breakout | Age | Close | Lips | Teeth | Jaw | Spread | Distance | Signal |\n")
-	fmt.Fprintf(&b, "| --- | --- | ---: | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |\n")
+	fmt.Fprintf(&b, "| Timeframe | Instrument | 24h Notional | State | Visual | Window | Breakout | Close | Lips | Teeth | Jaw | Spread | Distance | Dist ATR | Body Age | Touch5 | Signal |\n")
+	fmt.Fprintf(&b, "| --- | --- | ---: | --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |\n")
 	for _, item := range rep.Items {
 		fmt.Fprintf(
 			&b,
-			"| `%s` | `%s` | %.0f | `%s` | `%s` | `%s` | %d | %.8g | %.8g | %.8g | %.8g | %.3f%% | %.3f%% | %s |\n",
+			"| `%s` | `%s` | %.0f | `%s` | `%s` | `%s` | `%s/%d` | %.8g | %.8g | %.8g | %.8g | %.3f%% | %.3f%% | %.2f | %d | %d | %s |\n",
 			item.Bar,
 			item.InstID,
 			item.Notional24h,
 			item.State,
+			item.VisualStatus,
 			item.WindowStatus,
 			item.BreakoutDirection,
 			item.BreakoutAge,
@@ -347,6 +370,9 @@ func renderMarkdown(rep report) string {
 			item.Jaw,
 			item.SpreadPct*100,
 			item.DistancePct*100,
+			item.DistanceATR,
+			item.BodyOutsideAge,
+			item.TouchLineCount,
 			item.Signal,
 		)
 	}
