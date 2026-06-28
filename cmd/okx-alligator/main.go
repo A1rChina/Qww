@@ -109,8 +109,14 @@ func run(ctx context.Context) error {
 		if rep.Items[i].Bar != rep.Items[j].Bar {
 			return barRank(rep.Items[i].Bar) < barRank(rep.Items[j].Bar)
 		}
+		if rep.Items[i].WindowStatus != rep.Items[j].WindowStatus {
+			return windowRank(rep.Items[i].WindowStatus) < windowRank(rep.Items[j].WindowStatus)
+		}
 		if rep.Items[i].State != rep.Items[j].State {
 			return stateRank(rep.Items[i].State) < stateRank(rep.Items[j].State)
+		}
+		if rep.Items[i].WindowStatus == alligator.WindowCompressed {
+			return rep.Items[i].SpreadPct < rep.Items[j].SpreadPct
 		}
 		return rep.Items[i].SpreadPct > rep.Items[j].SpreadPct
 	})
@@ -264,6 +270,23 @@ func barRank(bar string) int {
 	}
 }
 
+func windowRank(status alligator.WindowStatus) int {
+	switch status {
+	case alligator.WindowCompressed:
+		return 0
+	case alligator.WindowBreaking:
+		return 1
+	case alligator.WindowMissed:
+		return 2
+	case alligator.WindowMixedOnly:
+		return 3
+	case alligator.WindowTrend:
+		return 4
+	default:
+		return 100
+	}
+}
+
 func stateRank(state alligator.State) int {
 	switch state {
 	case alligator.StateBullish:
@@ -305,21 +328,25 @@ func renderMarkdown(rep report) string {
 	}
 
 	fmt.Fprintf(&b, "\n## Watch List\n\n")
-	fmt.Fprintf(&b, "| Timeframe | Instrument | 24h Notional | State | Close | Lips | Teeth | Jaw | Spread | Signal |\n")
-	fmt.Fprintf(&b, "| --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | --- |\n")
+	fmt.Fprintf(&b, "| Timeframe | Instrument | 24h Notional | State | Window | Breakout | Age | Close | Lips | Teeth | Jaw | Spread | Distance | Signal |\n")
+	fmt.Fprintf(&b, "| --- | --- | ---: | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |\n")
 	for _, item := range rep.Items {
 		fmt.Fprintf(
 			&b,
-			"| `%s` | `%s` | %.0f | `%s` | %.8g | %.8g | %.8g | %.8g | %.3f%% | %s |\n",
+			"| `%s` | `%s` | %.0f | `%s` | `%s` | `%s` | %d | %.8g | %.8g | %.8g | %.8g | %.3f%% | %.3f%% | %s |\n",
 			item.Bar,
 			item.InstID,
 			item.Notional24h,
 			item.State,
+			item.WindowStatus,
+			item.BreakoutDirection,
+			item.BreakoutAge,
 			item.Close,
 			item.Lips,
 			item.Teeth,
 			item.Jaw,
 			item.SpreadPct*100,
+			item.DistancePct*100,
 			item.Signal,
 		)
 	}
