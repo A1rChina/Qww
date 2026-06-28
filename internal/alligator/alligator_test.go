@@ -8,10 +8,8 @@ import (
 func TestAnalyzeBullishTrend(t *testing.T) {
 	candles := make([]Candle, 80)
 	for i := range candles {
-		candles[i] = Candle{
-			Time:  time.Unix(int64(i*3600), 0).UTC(),
-			Close: 100 + float64(i),
-		}
+		closePrice := 100 + float64(i)
+		candles[i] = testCandle(i, closePrice)
 	}
 
 	got, err := Analyze("BTC-USDT-SWAP", candles, Settings{SleepThreshold: 0.0001})
@@ -29,10 +27,7 @@ func TestAnalyzeBullishTrend(t *testing.T) {
 func TestAnalyzeSleepingTrend(t *testing.T) {
 	candles := make([]Candle, 80)
 	for i := range candles {
-		candles[i] = Candle{
-			Time:  time.Unix(int64(i*3600), 0).UTC(),
-			Close: 100,
-		}
+		candles[i] = testCandle(i, 100)
 	}
 
 	got, err := Analyze("BTC-USDT-SWAP", candles, Settings{SleepThreshold: 0.0015})
@@ -41,5 +36,15 @@ func TestAnalyzeSleepingTrend(t *testing.T) {
 	}
 	if got.State != StateSleeping {
 		t.Fatalf("state = %s, want %s", got.State, StateSleeping)
+	}
+}
+
+func testCandle(index int, closePrice float64) Candle {
+	return Candle{
+		Time:  time.Unix(int64(index*3600), 0).UTC(),
+		Open:  closePrice,
+		High:  closePrice,
+		Low:   closePrice,
+		Close: closePrice,
 	}
 }
