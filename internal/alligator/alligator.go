@@ -26,17 +26,21 @@ type Settings struct {
 }
 
 type Analysis struct {
-	InstID      string    `json:"instId"`
-	Bar         string    `json:"bar,omitempty"`
-	Notional24h float64   `json:"notional24h,omitempty"`
-	Time        time.Time `json:"time"`
-	Close       float64   `json:"close"`
-	Jaw         float64   `json:"jaw"`
-	Teeth       float64   `json:"teeth"`
-	Lips        float64   `json:"lips"`
-	SpreadPct   float64   `json:"spreadPct"`
-	State       State     `json:"state"`
-	Signal      string    `json:"signal"`
+	InstID            string            `json:"instId"`
+	Bar               string            `json:"bar,omitempty"`
+	Notional24h       float64           `json:"notional24h,omitempty"`
+	Time              time.Time         `json:"time"`
+	Close             float64           `json:"close"`
+	Jaw               float64           `json:"jaw"`
+	Teeth             float64           `json:"teeth"`
+	Lips              float64           `json:"lips"`
+	SpreadPct         float64           `json:"spreadPct"`
+	DistancePct       float64           `json:"distancePct"`
+	BreakoutDirection BreakoutDirection `json:"breakoutDirection"`
+	BreakoutAge       int               `json:"breakoutAge"`
+	WindowStatus      WindowStatus      `json:"windowStatus"`
+	State             State             `json:"state"`
+	Signal            string            `json:"signal"`
 }
 
 type lineSpec struct {
@@ -86,18 +90,26 @@ func Analyze(instID string, candles []Candle, settings Settings) (Analysis, erro
 	last := len(candles) - 1
 	current := classify(closes[last], jaw[last], teeth[last], lips[last], settings.SleepThreshold)
 	previous := classify(closes[last-1], jaw[last-1], teeth[last-1], lips[last-1], settings.SleepThreshold)
+	spread := spreadPct(closes[last], jaw[last], teeth[last], lips[last])
+	distance := distancePct(closes[last], jaw[last], teeth[last], lips[last])
+	breakoutDirection, breakoutAge := breakoutInfo(closes, jaw, teeth, lips, last)
+	windowStatus := classifyWindow(current, spread, distance, breakoutDirection, breakoutAge, settings.SleepThreshold)
 
 	signal := describeSignal(previous, current)
 	return Analysis{
-		InstID:    instID,
-		Time:      candles[last].Time,
-		Close:     closes[last],
-		Jaw:       jaw[last],
-		Teeth:     teeth[last],
-		Lips:      lips[last],
-		SpreadPct: spreadPct(closes[last], jaw[last], teeth[last], lips[last]),
-		State:     current,
-		Signal:    signal,
+		InstID:            instID,
+		Time:              candles[last].Time,
+		Close:             closes[last],
+		Jaw:               jaw[last],
+		Teeth:             teeth[last],
+		Lips:              lips[last],
+		SpreadPct:         spread,
+		DistancePct:       distance,
+		BreakoutDirection: breakoutDirection,
+		BreakoutAge:       breakoutAge,
+		WindowStatus:      windowStatus,
+		State:             current,
+		Signal:            signal,
 	}, nil
 }
 
