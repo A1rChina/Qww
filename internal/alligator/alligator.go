@@ -18,6 +18,9 @@ const (
 
 type Candle struct {
 	Time  time.Time `json:"time"`
+	Open  float64   `json:"open"`
+	High  float64   `json:"high"`
+	Low   float64   `json:"low"`
 	Close float64   `json:"close"`
 }
 
@@ -30,15 +33,23 @@ type Analysis struct {
 	Bar               string            `json:"bar,omitempty"`
 	Notional24h       float64           `json:"notional24h,omitempty"`
 	Time              time.Time         `json:"time"`
+	Open              float64           `json:"open"`
+	High              float64           `json:"high"`
+	Low               float64           `json:"low"`
 	Close             float64           `json:"close"`
 	Jaw               float64           `json:"jaw"`
 	Teeth             float64           `json:"teeth"`
 	Lips              float64           `json:"lips"`
+	ATR               float64           `json:"atr"`
 	SpreadPct         float64           `json:"spreadPct"`
 	DistancePct       float64           `json:"distancePct"`
+	DistanceATR       float64           `json:"distanceAtr"`
 	BreakoutDirection BreakoutDirection `json:"breakoutDirection"`
 	BreakoutAge       int               `json:"breakoutAge"`
+	BodyOutsideAge    int               `json:"bodyOutsideAge"`
+	TouchLineCount    int               `json:"touchLineCount"`
 	WindowStatus      WindowStatus      `json:"windowStatus"`
+	VisualStatus      VisualStatus      `json:"visualStatus"`
 	State             State             `json:"state"`
 	Signal            string            `json:"signal"`
 }
@@ -68,8 +79,11 @@ func Analyze(instID string, candles []Candle, settings Settings) (Analysis, erro
 
 	closes := make([]float64, len(candles))
 	for i, candle := range candles {
-		if candle.Close <= 0 {
-			return Analysis{}, fmt.Errorf("non-positive close at index %d", i)
+		if candle.Open <= 0 || candle.High <= 0 || candle.Low <= 0 || candle.Close <= 0 {
+			return Analysis{}, fmt.Errorf("non-positive OHLC at index %d", i)
+		}
+		if candle.High < candle.Low {
+			return Analysis{}, fmt.Errorf("invalid high/low at index %d", i)
 		}
 		closes[i] = candle.Close
 	}
@@ -94,20 +108,33 @@ func Analyze(instID string, candles []Candle, settings Settings) (Analysis, erro
 	distance := distancePct(closes[last], jaw[last], teeth[last], lips[last])
 	breakoutDirection, breakoutAge := breakoutInfo(closes, jaw, teeth, lips, last)
 	windowStatus := classifyWindow(current, spread, distance, breakoutDirection, breakoutAge, settings.SleepThreshold)
+	atrValue := atr(candles, 14)
+	distanceATRValue := distanceATR(closes[last], jaw[last], teeth[last], lips[last], atrValue)
+	bodyAge := bodyOutsideAge(candles, jaw, teeth, lips, last)
+	touches := touchLineCount(candles, jaw, teeth, lips, last, 5)
+	visualStatus := classifyVisualStatus(current, windowStatus, breakoutAge, bodyAge, touches, distanceATRValue)
 
 	signal := describeSignal(previous, current)
 	return Analysis{
 		InstID:            instID,
 		Time:              candles[last].Time,
+		Open:              candles[last].Open,
+		High:              candles[last].High,
+		Low:               candles[last].Low,
 		Close:             closes[last],
 		Jaw:               jaw[last],
 		Teeth:             teeth[last],
 		Lips:              lips[last],
+		ATR:               atrValue,
 		SpreadPct:         spread,
 		DistancePct:       distance,
+		DistanceATR:       distanceATRValue,
 		BreakoutDirection: breakoutDirection,
 		BreakoutAge:       breakoutAge,
+		BodyOutsideAge:    bodyAge,
+		TouchLineCount:    touches,
 		WindowStatus:      windowStatus,
+		VisualStatus:      visualStatus,
 		State:             current,
 		Signal:            signal,
 	}, nil
