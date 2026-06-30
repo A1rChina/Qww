@@ -52,20 +52,31 @@ jobs:
           OUTPUT_DIR: reports
         run: go run ./cmd/okx-alligator
 
+      - name: Generate dynamic watchlist
+        env:
+          OUTPUT_DIR: reports
+        run: go run ./cmd/okx-watchlist
+
       - name: Verify and publish summary
         shell: bash
         run: |
           test -s reports/alligator-report.md
           test -s reports/alligator-report.json
+          test -s reports/watchlist.md
+          test -s reports/watchlist.json
           ls -lah reports
           {
+            echo "## Dynamic Watchlist"
+            echo
+            cat reports/watchlist.md
+            echo
+            echo "---"
+            echo
             echo "## Report files"
             echo
             echo '```text'
             ls -lah reports
             echo '```'
-            echo
-            cat reports/alligator-report.md
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload report
@@ -81,10 +92,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/alligator-report.md reports/alligator-report.json
+          git add reports/alligator-report.md reports/alligator-report.json reports/watchlist.md reports/watchlist.json
           if git diff --cached --quiet; then
             echo "No report changes to commit."
             exit 0
           fi
-          git commit -m "Update OKX alligator report"
+          git commit -m "Update OKX alligator watchlist"
           git push
