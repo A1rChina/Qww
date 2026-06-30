@@ -1,7 +1,7 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-06-30 14:39:59 UTC`  
-> Generated: `2026-06-30 14:40:17 UTC`  
+> Report: `2026-06-30 17:12:13 UTC`  
+> Generated: `2026-06-30 17:12:34 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
@@ -10,7 +10,7 @@
 | --- | ---: | ---: | --- | --- | --- |
 | **BTC** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 | **ETH** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **SOL** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **SOL** | 40 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -25,13 +25,11 @@
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 ZEC** | 58 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
-| **🆕 EWY** | 52 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
-| **🆕 CL** | 82 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 TRUMP** | 82 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 XAU** | 72 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 XLM** | 58 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **🆕 HYPE** | 53 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 ADA** | 80 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 SUI** | 73 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 AVAX** | 63 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 JTO** | 51 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 HYPE** | 47 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
 
 ## ⚡ Emerging
 
@@ -45,20 +43,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 RAVE** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 BASED** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 UB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 RAVE** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 SOXL** | 0 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
 | **🆕 AI** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 INTC** | 0 | 🆕 | ⚠️ | Running | 窗口已过，只等回踩/回压 |
 | **🆕 ACT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 XPL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 14 | 20 | 23 | 3 |
-| 4H | 10 | 12 | 38 | 0 |
-| 1D | 7 | 25 | 22 | 0 |
+| 1H | 14 | 17 | 27 | 0 |
+| 4H | 10 | 15 | 32 | 1 |
+| 1D | 8 | 23 | 22 | 0 |
 
 ## 📌 Summary
 
