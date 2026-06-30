@@ -15,6 +15,49 @@
 
 本工具只负责生成观察数据和报告，最终是否交易仍需要结合独立的入场、止损、盈亏比和仓位风控规则判断。
 
+## Dynamic Watchlist
+
+项目现在分为两层输出：
+
+1. `alligator-report.md/json`：原始鳄鱼线统计数据，用于保留完整计算结果。
+2. `watchlist.md/json`：动态观察清单，用于日常盯盘阅读。
+
+`watchlist.md` 不再按 `1H` / `4H` / `1D` 机械展开，而是按交易观察优先级组织：
+
+- `Market Snapshot`：固定展示 BTC / ETH / SOL，作为市场基准。
+- `Active Watchlist`：动态保留 6–9 个仍值得观察的标的。
+- `Emerging`：刚进入视野、评分上升或刚脱离混沌但尚未进入 Active 的标的。
+- `Reverse Watch`：高周期偏空背景下，低周期出现逆向修复的标的。
+- `Ignore`：已经 trend_run、missed、extended 或距离三线过远的标的。
+- `Market Breadth`：附录形式展示 1H / 4H / 1D 的 Bullish、Bearish、Sleeping、Mixed 统计。
+
+动态观察清单会基于上一版 `watchlist.json` 计算：
+
+- `🆕`：新进入观察系统
+- `▲n`：Observation Score 上升
+- `▼n`：Observation Score 下降
+- `—`：相对上一版无显著变化
+
+## Observation Score
+
+Watchlist 使用 0–100 分的观察评分，而不是纯主观排序。评分重点不是判断涨跌，而是判断“是否仍处于可观察窗口”。
+
+主要加分项：
+
+- `compressed` / `coil` / `pre_breakout`
+- Close 仍贴近 Lips / Teeth / Jaw
+- spread 仍处低位
+- 1H / 4H 多周期仍未趋势化
+- fresh breakout 但距离三线仍不远
+
+主要降权项：
+
+- `missed` / `extended` / `pullback_watch`
+- `trend_run`
+- spread 已明显扩大
+- Close 已明显远离三线
+- 高周期已经趋势延续
+
 ## 鳄鱼线规则
 
 程序使用收盘价计算 SMMA：
@@ -32,8 +75,16 @@
 
 ## 本地运行
 
+生成原始报告：
+
 ```powershell
 go run ./cmd/okx-alligator
+```
+
+基于原始报告生成动态 Watchlist：
+
+```powershell
+go run ./cmd/okx-watchlist
 ```
 
 常用环境变量：
@@ -57,6 +108,7 @@ go run ./cmd/okx-alligator
 $env:OKX_INST_IDS="BTC-USDT-SWAP,ETH-USDT-SWAP,SOL-USDT-SWAP"
 $env:OKX_BARS="1H,4H,1D"
 go run ./cmd/okx-alligator
+go run ./cmd/okx-watchlist
 ```
 
 全量 USDT 永续：
@@ -68,6 +120,7 @@ $env:OKX_MAX_INSTRUMENTS="0"
 $env:OKX_CONCURRENCY="2"
 $env:OKX_MIN_NOTIONAL_24H="18000000"
 go run ./cmd/okx-alligator
+go run ./cmd/okx-watchlist
 ```
 
 ## GitHub Actions
@@ -80,8 +133,9 @@ go run ./cmd/okx-alligator
 
 Actions 输出：
 
-- GitHub Step Summary：直接在运行页面查看三周期关注结果
-- Artifact：`okx-alligator-report`，包含 `alligator-report.md` 和 `alligator-report.json`
+- GitHub Step Summary：默认展示 `watchlist.md`
+- Artifact：`okx-alligator-report`，包含 `alligator-report.md/json` 与 `watchlist.md/json`
+- 仓库提交：自动更新 `reports/alligator-report.md/json` 与 `reports/watchlist.md/json`
 
 ## 免责声明
 
