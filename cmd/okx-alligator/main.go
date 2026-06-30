@@ -154,7 +154,7 @@ func loadConfig() config {
 		CandleLimit:    envInt("OKX_CANDLE_LIMIT", 200),
 		MaxInstruments: envInt("OKX_MAX_INSTRUMENTS", 0),
 		Concurrency:    max(1, envInt("OKX_CONCURRENCY", 2)),
-		MinNotional24h: envFloat("OKX_MIN_NOTIONAL_24H", 500000),
+		MinNotional24h: envFloat("OKX_MIN_NOTIONAL_24H", 18000000),
 		SleepThreshold: envFloat("ALLIGATOR_SLEEP_THRESHOLD", 0.0015),
 		OutputDir:      envString("OUTPUT_DIR", "reports"),
 	}
@@ -241,7 +241,7 @@ func selectInstruments(instruments []okx.Instrument, quoteCurrency string) []str
 func filterInstrumentsByNotional(instIDs []string, notionalByInstID map[string]float64, minNotional24h float64, max int) []string {
 	filtered := make([]string, 0, len(instIDs))
 	for _, instID := range instIDs {
-		if minNotional24h > 0 && notionalByInstID[instID] < minNotional24h {
+		if minNotional24h > 0 && notionalByInstID[instID] <= minNotional24h {
 			continue
 		}
 		filtered = append(filtered, instID)
