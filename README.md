@@ -47,7 +47,7 @@ go run ./cmd/okx-alligator
 | `OKX_CANDLE_LIMIT` | `200` | 每个标的、每个周期拉取 K 线数量 |
 | `OKX_MAX_INSTRUMENTS` | `0` | 动态获取时最多分析多少个标的；`0` 表示不限制 |
 | `OKX_CONCURRENCY` | `2` | 并发拉取 K 线的 worker 数；全量分析时建议保持较低，避免 OKX 限流 |
-| `OKX_MIN_NOTIONAL_24H` | `600000` | 24h 成交金额过滤阈值，低于该值的标的不进入名单 |
+| `OKX_MIN_NOTIONAL_24H` | `18000000` | 24h 成交金额过滤阈值，低于该值的标的不进入名单 |
 | `ALLIGATOR_SLEEP_THRESHOLD` | `0.0015` | 三线纠缠阈值，按收盘价比例计算 |
 | `OUTPUT_DIR` | `reports` | 报告输出目录 |
 
@@ -66,7 +66,7 @@ $env:OKX_INST_TYPE="SWAP"
 $env:OKX_QUOTE_CCY="USDT"
 $env:OKX_MAX_INSTRUMENTS="0"
 $env:OKX_CONCURRENCY="2"
-$env:OKX_MIN_NOTIONAL_24H="600000"
+$env:OKX_MIN_NOTIONAL_24H="18000000"
 go run ./cmd/okx-alligator
 ```
 
