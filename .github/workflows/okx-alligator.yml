@@ -47,7 +47,7 @@ jobs:
           OKX_CANDLE_LIMIT: "200"
           OKX_MAX_INSTRUMENTS: "0"
           OKX_CONCURRENCY: "2"
-          OKX_MIN_NOTIONAL_24H: "500000"
+          OKX_MIN_NOTIONAL_24H: "600000"
           ALLIGATOR_SLEEP_THRESHOLD: "0.0015"
           OUTPUT_DIR: reports
         run: go run ./cmd/okx-alligator
