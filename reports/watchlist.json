@@ -1,19 +1,20 @@
 {
-  "generatedAtUTC": "2026-06-30T09:58:30.030197103Z",
-  "sourceReportUTC": "2026-06-30T09:58:08.385843704Z",
+  "generatedAtUTC": "2026-06-30T14:40:17.683221862Z",
+  "sourceReportUTC": "2026-06-30T14:39:59.80810225Z",
   "market": {
     "bias": {
       "1D": "📉 Bearish",
-      "1H": "⚪ Mixed",
+      "1H": "📉 Bearish",
       "4H": "⚪ Mixed"
     },
-    "readiness": 54,
-    "note": "适合维护观察名单，不适合追逐已经走远的趋势。"
+    "readiness": 44,
+    "note": "多数窗口已离开压缩区，优先等待下一轮重新缠绕。"
   },
   "benchmark": [
     {
       "symbol": "BTC",
       "score": 0,
+      "isNew": true,
       "window": "❌",
       "lifecycle": "Running",
       "reason": "趋势延续，不追",
@@ -23,135 +24,104 @@
           "visual": "trend_run",
           "window": "trend",
           "breakout": "down/8",
-          "spreadPct": 0.07445177429285227,
-          "distancePct": 0.07495666257926421
+          "spreadPct": 0.07536838124483947,
+          "distancePct": 0.08819090393030878
         },
         "1H": {
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "down/7",
-          "spreadPct": 0.004260698270645889,
-          "distancePct": 0.009355738470613719
+          "breakout": "down/12",
+          "spreadPct": 0.007533401201219217,
+          "distancePct": 0.01714713252582977
         },
         "4H": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "down/3",
-          "spreadPct": 0.006845045133546344,
-          "distancePct": 0.013940080874692222
+          "state": "bearish",
+          "visual": "extended",
+          "window": "trend",
+          "breakout": "down/4",
+          "spreadPct": 0.007417385584524856,
+          "distancePct": 0.02543520005798392
         }
       },
-      "notional24h": 7081480043.892241
+      "notional24h": 6740014857.29624
     },
     {
       "symbol": "ETH",
-      "score": 37,
-      "window": "🧩",
-      "lifecycle": "Watching",
-      "reason": "仍在压缩，Close贴近三线",
+      "score": 0,
+      "isNew": true,
+      "window": "❌",
+      "lifecycle": "Running",
+      "reason": "趋势延续，不追",
       "timeframes": {
         "1D": {
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
           "breakout": "down/8",
-          "spreadPct": 0.09343381187173982,
-          "distancePct": 0.07935764010426496
+          "spreadPct": 0.09466391912912489,
+          "distancePct": 0.09356797402737291
         },
         "1H": {
-          "state": "sleeping",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "down/3",
-          "spreadPct": 0.0010851069650723096,
-          "distancePct": 0.006038342458386434
+          "state": "bearish",
+          "visual": "trend_run",
+          "window": "trend",
+          "breakout": "down/8",
+          "spreadPct": 0.003687687704137135,
+          "distancePct": 0.01592197530505413
         },
         "4H": {
           "state": "mixed",
-          "visual": "coil",
-          "window": "compressed",
-          "breakout": "none/0",
-          "spreadPct": 0.008154270596266175,
-          "distancePct": 0.0018756198329618423
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "down/2",
+          "spreadPct": 0.004006041448823176,
+          "distancePct": 0.015310391926021906
         }
       },
-      "notional24h": 7802004712.4864
+      "notional24h": 7518233668.04136
     },
     {
       "symbol": "SOL",
-      "score": 38,
-      "window": "🔥",
-      "lifecycle": "Preparing",
-      "reason": "仍在压缩，Close贴近三线",
+      "score": 0,
+      "isNew": true,
+      "window": "⚠️",
+      "lifecycle": "Missed",
+      "reason": "窗口已过，只等回踩/回压",
       "timeframes": {
         "1D": {
           "state": "mixed",
           "visual": "pullback_watch",
           "window": "missed",
           "breakout": "up/2",
-          "spreadPct": 0.03708403701746913,
-          "distancePct": 0.03497860659799682
+          "spreadPct": 0.03738306095952608,
+          "distancePct": 0.027197239615528796
         },
         "1H": {
           "state": "mixed",
-          "visual": "fresh_breakout",
-          "window": "compressed",
-          "breakout": "down/2",
-          "spreadPct": 0.006683068256834458,
-          "distancePct": 0.0060214050518589
+          "visual": "extended",
+          "window": "missed",
+          "breakout": "down/7",
+          "spreadPct": 0.0037572138994049244,
+          "distancePct": 0.010444722518484188
         },
         "4H": {
-          "state": "bullish",
-          "visual": "trend_run",
-          "window": "trend",
-          "breakout": "up/10",
-          "spreadPct": 0.03383287369482482,
-          "distancePct": 0.02242515910581549
+          "state": "mixed",
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "none/0",
+          "spreadPct": 0.03414558771048002,
+          "distancePct": 0.011947500628299053
         }
       },
-      "notional24h": 1333371894.6125
+      "notional24h": 1114908512.0685
     }
   ],
   "active": [
     {
-      "symbol": "TRUMP",
-      "score": 83,
-      "window": "🔥",
-      "lifecycle": "Preparing",
-      "reason": "仍在压缩，Close贴近三线",
-      "timeframes": {
-        "1D": {
-          "state": "bearish",
-          "visual": "trend_run",
-          "window": "trend",
-          "breakout": "down/8",
-          "spreadPct": 0.09979841110605216,
-          "distancePct": 0.10114194580325087
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "fresh_breakout",
-          "window": "compressed",
-          "breakout": "down/2",
-          "spreadPct": 0.0023138743012736545,
-          "distancePct": 0.0014737112478491775
-        },
-        "4H": {
-          "state": "mixed",
-          "visual": "coil",
-          "window": "compressed",
-          "breakout": "none/0",
-          "spreadPct": 0.010545360368364181,
-          "distancePct": 0.002719677470496621
-        }
-      },
-      "notional24h": 22330963.532799996
-    },
-    {
-      "symbol": "NEAR",
-      "score": 59,
+      "symbol": "ZEC",
+      "score": 58,
+      "isNew": true,
       "window": "🔥",
       "lifecycle": "Preparing",
       "reason": "刚脱离混沌，距离仍可控",
@@ -160,66 +130,68 @@
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "down/8",
-          "spreadPct": 0.10256620745748077,
-          "distancePct": 0.13130154454602294
+          "breakout": "down/10",
+          "spreadPct": 0.12064879302038897,
+          "distancePct": 0.12229756083805807
+        },
+        "1H": {
+          "state": "mixed",
+          "visual": "fresh_breakout",
+          "window": "breaking",
+          "breakout": "up/1",
+          "spreadPct": 0.005549524777112738,
+          "distancePct": 0.0067901731694564905
+        },
+        "4H": {
+          "state": "mixed",
+          "visual": "pre_breakout",
+          "window": "mixed_only",
+          "breakout": "none/0",
+          "spreadPct": 0.01713223444316485,
+          "distancePct": 0.00899782158102789
+        }
+      },
+      "notional24h": 194526036.326
+    },
+    {
+      "symbol": "EWY",
+      "score": 52,
+      "isNew": true,
+      "window": "🔥",
+      "lifecycle": "Preparing",
+      "reason": "刚脱离混沌，距离仍可控",
+      "timeframes": {
+        "1D": {
+          "state": "mixed",
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "down/3",
+          "spreadPct": 0.012342908617711833,
+          "distancePct": 0.018234326325517573
         },
         "1H": {
           "state": "sleeping",
           "visual": "fresh_breakout",
-          "window": "mixed_only",
-          "breakout": "down/2",
-          "spreadPct": 0.0012692150972794401,
-          "distancePct": 0.007550165251182719
+          "window": "missed",
+          "breakout": "up/2",
+          "spreadPct": 0.0012134655586241339,
+          "distancePct": 0.01268436557299636
         },
         "4H": {
           "state": "mixed",
           "visual": "fresh_breakout",
           "window": "breaking",
-          "breakout": "down/1",
-          "spreadPct": 0.011931921625213724,
-          "distancePct": 0.011863782416611172
+          "breakout": "up/1",
+          "spreadPct": 0.011195549568587293,
+          "distancePct": 0.0093103783884775
         }
       },
-      "notional24h": 38384680.938
-    },
-    {
-      "symbol": "SUI",
-      "score": 83,
-      "window": "🧩",
-      "lifecycle": "Watching",
-      "reason": "仍在压缩，Close贴近三线",
-      "timeframes": {
-        "1D": {
-          "state": "bearish",
-          "visual": "trend_run",
-          "window": "trend",
-          "breakout": "down/13",
-          "spreadPct": 0.12509408585649764,
-          "distancePct": 0.07484855080246033
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "fresh_breakout",
-          "window": "compressed",
-          "breakout": "down/2",
-          "spreadPct": 0.0018865646968855958,
-          "distancePct": 0.003650910588726624
-        },
-        "4H": {
-          "state": "mixed",
-          "visual": "coil",
-          "window": "compressed",
-          "breakout": "none/0",
-          "spreadPct": 0.006956612372035811,
-          "distancePct": 0.0014723409667940807
-        }
-      },
-      "notional24h": 53951824.940799996
+      "notional24h": 18438545.0845
     },
     {
       "symbol": "CL",
-      "score": 73,
+      "score": 82,
+      "isNew": true,
       "window": "🧩",
       "lifecycle": "Watching",
       "reason": "仍在压缩，Close贴近三线",
@@ -229,99 +201,67 @@
           "visual": "trend_run",
           "window": "trend",
           "breakout": "down/26",
-          "spreadPct": 0.14748929525877216,
-          "distancePct": 0.09744833783124233
+          "spreadPct": 0.1483023104552516,
+          "distancePct": 0.10349787637193752
         },
         "1H": {
           "state": "mixed",
           "visual": "pre_breakout",
-          "window": "mixed_only",
-          "breakout": "up/2",
-          "spreadPct": 0.001646880807208999,
-          "distancePct": 0.008670188747760538
+          "window": "compressed",
+          "breakout": "none/0",
+          "spreadPct": 0.0038600115946955857,
+          "distancePct": 0.0016421485470689413
         },
         "4H": {
           "state": "mixed",
           "visual": "coil",
           "window": "compressed",
           "breakout": "none/0",
-          "spreadPct": 0.010218837765140832,
-          "distancePct": 0.003404080595878757
+          "spreadPct": 0.008658663593802214,
+          "distancePct": 0.0012849839951237804
         }
       },
-      "notional24h": 34088993.252
+      "notional24h": 30199101.786
     },
     {
-      "symbol": "MU",
-      "score": 71,
+      "symbol": "TRUMP",
+      "score": 82,
+      "isNew": true,
       "window": "🧩",
       "lifecycle": "Watching",
       "reason": "仍在压缩，Close贴近三线",
       "timeframes": {
         "1D": {
-          "state": "bullish",
+          "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "up/1",
-          "spreadPct": 0.10393638901144418,
-          "distancePct": 0.06408803049527782
+          "breakout": "down/8",
+          "spreadPct": 0.09997866109600889,
+          "distancePct": 0.10313076328513505
         },
         "1H": {
-          "state": "mixed",
-          "visual": "pre_breakout",
-          "window": "mixed_only",
-          "breakout": "none/0",
-          "spreadPct": 0.012847518503245982,
-          "distancePct": 0.0036435251544041573
-        },
-        "4H": {
           "state": "mixed",
           "visual": "coil",
           "window": "compressed",
           "breakout": "none/0",
-          "spreadPct": 0.007303191928109376,
-          "distancePct": 0.0030368865013501354
-        }
-      },
-      "notional24h": 636592331.6478
-    },
-    {
-      "symbol": "DRAM",
-      "score": 65,
-      "window": "🧩",
-      "lifecycle": "Watching",
-      "reason": "多周期未确认，仍可观察",
-      "timeframes": {
-        "1D": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.07619647984961127,
-          "distancePct": 0.010010700983868014
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "pre_breakout",
-          "window": "mixed_only",
-          "breakout": "none/0",
-          "spreadPct": 0.013415696320751633,
-          "distancePct": 0.0015017409266033063
+          "spreadPct": 0.002466741521283077,
+          "distancePct": 0.0011246126776486476
         },
         "4H": {
           "state": "mixed",
-          "visual": "pre_breakout",
-          "window": "mixed_only",
-          "breakout": "none/0",
-          "spreadPct": 0.022068563919166298,
-          "distancePct": 0.006473116472058734
+          "visual": "fresh_breakout",
+          "window": "compressed",
+          "breakout": "down/2",
+          "spreadPct": 0.008606462451188039,
+          "distancePct": 0.0036860825885762414
         }
       },
-      "notional24h": 37822885.265
+      "notional24h": 21009887.8347
     },
     {
-      "symbol": "ONDO",
-      "score": 65,
+      "symbol": "XAU",
+      "score": 72,
+      "isNew": true,
       "window": "🧩",
       "lifecycle": "Watching",
       "reason": "仍在压缩，Close贴近三线",
@@ -331,31 +271,32 @@
           "visual": "trend_run",
           "window": "trend",
           "breakout": "down/13",
-          "spreadPct": 0.11127860582888455,
-          "distancePct": 0.09494645980246741
+          "spreadPct": 0.04533996361059704,
+          "distancePct": 0.037423930540989574
         },
         "1H": {
           "state": "mixed",
-          "visual": "fresh_breakout",
+          "visual": "pre_breakout",
           "window": "mixed_only",
-          "breakout": "down/2",
-          "spreadPct": 0.0036427316632896534,
-          "distancePct": 0.008322415518095842
+          "breakout": "up/2",
+          "spreadPct": 0.0018573267787321032,
+          "distancePct": 0.008537851625271852
         },
         "4H": {
           "state": "mixed",
-          "visual": "coil",
+          "visual": "pre_breakout",
           "window": "compressed",
           "breakout": "none/0",
-          "spreadPct": 0.0066070665197360415,
-          "distancePct": 0.003908630051239173
+          "spreadPct": 0.01090406547000344,
+          "distancePct": 0.0007392055547576842
         }
       },
-      "notional24h": 18276866.136
+      "notional24h": 298514479.30289996
     },
     {
-      "symbol": "ZEC",
-      "score": 57,
+      "symbol": "XLM",
+      "score": 58,
+      "isNew": true,
       "window": "🧩",
       "lifecycle": "Watching",
       "reason": "多周期未确认，仍可观察",
@@ -364,138 +305,142 @@
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "down/10",
-          "spreadPct": 0.12221772584047211,
-          "distancePct": 0.13689206636950177
+          "breakout": "down/7",
+          "spreadPct": 0.06977885531267064,
+          "distancePct": 0.1178202995983784
         },
         "1H": {
           "state": "mixed",
           "visual": "pre_breakout",
           "window": "mixed_only",
-          "breakout": "down/1",
-          "spreadPct": 0.013567921933398477,
-          "distancePct": 0.009731946822685222
+          "breakout": "none/0",
+          "spreadPct": 0.012660903671258748,
+          "distancePct": 0.002863660385594135
         },
         "4H": {
           "state": "mixed",
           "visual": "pre_breakout",
           "window": "mixed_only",
-          "breakout": "none/0",
-          "spreadPct": 0.026411545601874104,
-          "distancePct": 0.0031723136793642332
+          "breakout": "up/1",
+          "spreadPct": 0.01744076630344043,
+          "distancePct": 0.01486097741351106
         }
       },
-      "notional24h": 198399447.2635
+      "notional24h": 44171023.294800006
+    },
+    {
+      "symbol": "HYPE",
+      "score": 53,
+      "isNew": true,
+      "window": "🧩",
+      "lifecycle": "Watching",
+      "reason": "仍在压缩，Close贴近三线",
+      "timeframes": {
+        "1D": {
+          "state": "mixed",
+          "visual": "fresh_breakout",
+          "window": "breaking",
+          "breakout": "up/1",
+          "spreadPct": 0.009220227046474615,
+          "distancePct": 0.010700792428124021
+        },
+        "1H": {
+          "state": "mixed",
+          "visual": "coil",
+          "window": "compressed",
+          "breakout": "none/0",
+          "spreadPct": 0.007917473755538185,
+          "distancePct": 0.003294652196877183
+        },
+        "4H": {
+          "state": "bullish",
+          "visual": "trend_run",
+          "window": "trend",
+          "breakout": "up/7",
+          "spreadPct": 0.024770182076709505,
+          "distancePct": 0.022290557426105948
+        }
+      },
+      "notional24h": 315600290.46619993
     }
   ],
   "emerging": [],
   "reverse": [],
   "ignore": [
     {
-      "symbol": "UB",
+      "symbol": "RAVE",
       "score": 0,
-      "window": "⚠️",
-      "lifecycle": "Missed",
-      "reason": "窗口已过，只等回踩/回压",
-      "timeframes": {
-        "1D": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.37699047480917364,
-          "distancePct": 0.020563943248475984
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "down/2",
-          "spreadPct": 0.07814224192126812,
-          "distancePct": 0.11602488458414831
-        },
-        "4H": {
-          "state": "mixed",
-          "visual": "extended",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.2259162273774452,
-          "distancePct": 0.10134104537056356
-        }
-      },
-      "notional24h": 151662308.826
-    },
-    {
-      "symbol": "CBRS",
-      "score": 0,
-      "window": "⚠️",
-      "lifecycle": "Missed",
-      "reason": "窗口已过，只等回踩/回压",
-      "timeframes": {
-        "1D": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.14997491666829713,
-          "distancePct": 0.008447430878647558
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.05057052871267675,
-          "distancePct": 0.013209391349132928
-        },
-        "4H": {
-          "state": "mixed",
-          "visual": "extended",
-          "window": "missed",
-          "breakout": "up/6",
-          "spreadPct": 0.044984122345957764,
-          "distancePct": 0.08985516267679354
-        }
-      },
-      "notional24h": 45931905.9897
-    },
-    {
-      "symbol": "ACT",
-      "score": 0,
+      "isNew": true,
       "window": "❌",
       "lifecycle": "Running",
       "reason": "趋势延续，不追",
       "timeframes": {
         "1D": {
           "state": "mixed",
-          "visual": "fresh_breakout",
+          "visual": "pullback_watch",
           "window": "missed",
-          "breakout": "up/3",
-          "spreadPct": 0.17986441393386884,
-          "distancePct": 0.15150581203809046
+          "breakout": "none/0",
+          "spreadPct": 0.3707907147756545,
+          "distancePct": 0.07210004080848328
         },
         "1H": {
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "down/7",
-          "spreadPct": 0.04188034698569053,
-          "distancePct": 0.10540614134389585
+          "breakout": "down/8",
+          "spreadPct": 0.07368576246914496,
+          "distancePct": 0.14085975472623785
         },
         "4H": {
           "state": "mixed",
           "visual": "pullback_watch",
           "window": "missed",
           "breakout": "none/0",
-          "spreadPct": 0.22913249118829168,
-          "distancePct": 0.024105395208917624
+          "spreadPct": 0.26182944839440603,
+          "distancePct": 0.024309460971688835
         }
       },
-      "notional24h": 45082185.865524
+      "notional24h": 135055087.50384
+    },
+    {
+      "symbol": "UB",
+      "score": 0,
+      "isNew": true,
+      "window": "⚠️",
+      "lifecycle": "Missed",
+      "reason": "窗口已过，只等回踩/回压",
+      "timeframes": {
+        "1D": {
+          "state": "mixed",
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "none/0",
+          "spreadPct": 0.32135162364313513,
+          "distancePct": 0.1651158633356718
+        },
+        "1H": {
+          "state": "mixed",
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "up/4",
+          "spreadPct": 0.00726474803727244,
+          "distancePct": 0.08485139403358301
+        },
+        "4H": {
+          "state": "bullish",
+          "visual": "trend_run",
+          "window": "trend",
+          "breakout": "up/16",
+          "spreadPct": 0.19338806717590643,
+          "distancePct": 0.2284658321318726
+        }
+      },
+      "notional24h": 180127780.474
     },
     {
       "symbol": "AI",
       "score": 0,
+      "isNew": true,
       "window": "⚠️",
       "lifecycle": "Missed",
       "reason": "窗口已过，只等回踩/回压",
@@ -505,113 +450,150 @@
           "visual": "extended",
           "window": "missed",
           "breakout": "up/1",
-          "spreadPct": 0.11642504456352602,
-          "distancePct": 0.21936717924793767
+          "spreadPct": 0.11478726106202077,
+          "distancePct": 0.23034855837778326
         },
         "1H": {
           "state": "mixed",
           "visual": "pullback_watch",
           "window": "missed",
           "breakout": "none/0",
-          "spreadPct": 0.25041566706547236,
-          "distancePct": 0.06777397310539857
+          "spreadPct": 0.12579310169362679,
+          "distancePct": 0.028912335061190328
         },
         "4H": {
           "state": "bullish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "up/10",
-          "spreadPct": 0.08147585610444118,
-          "distancePct": 0.2752220571444112
+          "breakout": "up/11",
+          "spreadPct": 0.16430308561252394,
+          "distancePct": 0.2521045332812071
         }
       },
-      "notional24h": 121017726.126
+      "notional24h": 163088207.65
     },
     {
-      "symbol": "ORDI",
+      "symbol": "INTC",
       "score": 0,
+      "isNew": true,
       "window": "⚠️",
-      "lifecycle": "Missed",
+      "lifecycle": "Running",
       "reason": "窗口已过，只等回踩/回压",
       "timeframes": {
         "1D": {
-          "state": "mixed",
-          "visual": "pullback_watch",
+          "state": "bullish",
+          "visual": "trend_run",
+          "window": "trend",
+          "breakout": "up/1",
+          "spreadPct": 0.06282032476759522,
+          "distancePct": 0.07332751472741407
+        },
+        "1H": {
+          "state": "bullish",
+          "visual": "trend_run",
           "window": "missed",
           "breakout": "up/2",
-          "spreadPct": 0.06357044574711943,
-          "distancePct": 0.11281017824469737
+          "spreadPct": 0.010375039003874246,
+          "distancePct": 0.04244257895851014
         },
-        "1H": {
+        "4H": {
+          "state": "mixed",
+          "visual": "extended",
+          "window": "missed",
+          "breakout": "up/6",
+          "spreadPct": 0.00839040129959004,
+          "distancePct": 0.056351939945946956
+        }
+      },
+      "notional24h": 55594256.88600001
+    },
+    {
+      "symbol": "ACT",
+      "score": 0,
+      "isNew": true,
+      "window": "❌",
+      "lifecycle": "Running",
+      "reason": "趋势延续，不追",
+      "timeframes": {
+        "1D": {
           "state": "mixed",
           "visual": "pullback_watch",
           "window": "missed",
           "breakout": "none/0",
-          "spreadPct": 0.05045825200378397,
-          "distancePct": 0.023424766492278804
+          "spreadPct": 0.1912434508245628,
+          "distancePct": 0.09782622942811484
         },
-        "4H": {
-          "state": "bullish",
-          "visual": "trend_run",
-          "window": "trend",
-          "breakout": "up/10",
-          "spreadPct": 0.11338689714748647,
-          "distancePct": 0.09473750001859259
-        }
-      },
-      "notional24h": 68423436.68159999
-    },
-    {
-      "symbol": "H",
-      "score": 0,
-      "window": "⚠️",
-      "lifecycle": "Missed",
-      "reason": "窗口已过，只等回踩/回压",
-      "timeframes": {
-        "1D": {
+        "1H": {
           "state": "bearish",
           "visual": "trend_run",
           "window": "trend",
-          "breakout": "down/16",
-          "spreadPct": 2.441673715073069,
-          "distancePct": 1.8807270356968355
-        },
-        "1H": {
-          "state": "mixed",
-          "visual": "pullback_watch",
-          "window": "missed",
-          "breakout": "none/0",
-          "spreadPct": 0.07921546645749539,
-          "distancePct": 0.026556463490002846
+          "breakout": "down/12",
+          "spreadPct": 0.07672796512418564,
+          "distancePct": 0.12674368137340594
         },
         "4H": {
           "state": "mixed",
           "visual": "pullback_watch",
           "window": "missed",
-          "breakout": "up/1",
-          "spreadPct": 0.10651525902491842,
-          "distancePct": 0.09302117602449862
+          "breakout": "none/0",
+          "spreadPct": 0.20078186035502696,
+          "distancePct": 0.04902985416739608
         }
       },
-      "notional24h": 58436764.27680001
+      "notional24h": 35771161.502097
+    },
+    {
+      "symbol": "XPL",
+      "score": 0,
+      "isNew": true,
+      "window": "❌",
+      "lifecycle": "Running",
+      "reason": "趋势延续，不追",
+      "timeframes": {
+        "1D": {
+          "state": "mixed",
+          "visual": "pullback_watch",
+          "window": "missed",
+          "breakout": "none/0",
+          "spreadPct": 0.07855973283247746,
+          "distancePct": 0.004004653278880804
+        },
+        "1H": {
+          "state": "bearish",
+          "visual": "trend_run",
+          "window": "trend",
+          "breakout": "down/8",
+          "spreadPct": 0.01729635345968116,
+          "distancePct": 0.09721023747182865
+        },
+        "4H": {
+          "state": "mixed",
+          "visual": "extended",
+          "window": "missed",
+          "breakout": "down/2",
+          "spreadPct": 0.026296419050889395,
+          "distancePct": 0.08738702016408816
+        }
+      },
+      "notional24h": 38477112.96
     }
   ],
   "summary": {
     "1D": {
       "bearish": 25,
       "bullish": 7,
-      "mixed": 23
+      "mixed": 22
     },
     "1H": {
-      "bearish": 14,
-      "bullish": 5,
-      "mixed": 38,
-      "sleeping": 4
+      "bearish": 20,
+      "bullish": 14,
+      "mixed": 23,
+      "sleeping": 3
     },
     "4H": {
-      "bearish": 9,
-      "bullish": 12,
-      "mixed": 40
+      "bearish": 12,
+      "bullish": 10,
+      "mixed": 38
     }
   }
 }
