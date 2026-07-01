@@ -1,33 +1,33 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-01 14:54:56 UTC`  
-> Generated: `2026-07-01 14:55:19 UTC`  
+> Report: `2026-07-01 17:22:35 UTC`  
+> Generated: `2026-07-01 17:22:58 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 24 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
-| **ETH** | 43 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
-| **SOL** | 0 | 🆕 | ⚠️ | Running | 窗口已过，只等回踩/回压 |
+| **BTC** | 22 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **ETH** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **SOL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 | Cycle | Bias |
 | --- | --- |
-| 1H | ⚪ Mixed |
+| 1H | 📉 Bearish |
 | 4H | ⚪ Mixed |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `54 / 100`  
+**Market Readiness:** `57 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 DOGE** | 63 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
-| **🆕 XRP** | 65 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 HYPE** | 42 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 HYPE** | 79 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 NVDA** | 75 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 JTO** | 46 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
 
 ## ⚡ Emerging
 
@@ -41,20 +41,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
+| **🆕 BEAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 SOXL** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 UB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 BEAT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 SPCX** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 RAVE** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 MSTR** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 RAVE** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 MU** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 INTC** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 14 | 15 | 26 | 4 |
-| 4H | 10 | 13 | 36 | 0 |
-| 1D | 5 | 22 | 27 | 0 |
+| 1H | 15 | 16 | 29 | 0 |
+| 4H | 11 | 8 | 41 | 0 |
+| 1D | 6 | 19 | 31 | 0 |
 
 ## 📌 Summary
 
