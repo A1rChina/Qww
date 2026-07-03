@@ -1,16 +1,16 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-03 04:04:12 UTC`  
-> Generated: `2026-07-03 04:04:35 UTC`  
+> Report: `2026-07-03 09:33:15 UTC`  
+> Generated: `2026-07-03 09:33:48 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 40 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **BTC** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 | **ETH** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **SOL** | 28 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **SOL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -18,14 +18,19 @@
 | 4H | 📈 Bullish |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `54 / 100`  
+**Market Readiness:** `53 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 QQQ** | 61 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 AAVE** | 62 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 SPCX** | 82 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 CL** | 70 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 QQQ** | 65 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 CAP** | 45 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
+| **🆕 TSLA** | 44 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
 
 ## ⚡ Emerging
 
@@ -39,20 +44,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 BREV** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 SAMSUNG** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 RAVE** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 SOXL** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ALLO** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 BEAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ZKP** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 | **🆕 LAB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 MRVL** | 2 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
+| **🆕 WLD** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 SKHYNIX** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 29 | 6 | 30 | 1 |
-| 4H | 25 | 15 | 26 | 0 |
-| 1D | 5 | 9 | 48 | 0 |
+| 1H | 32 | 5 | 23 | 2 |
+| 4H | 28 | 11 | 23 | 0 |
+| 1D | 6 | 4 | 48 | 0 |
 
 ## 📌 Summary
 
