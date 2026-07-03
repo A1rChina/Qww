@@ -1,7 +1,7 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-03 19:44:33 UTC`  
-> Generated: `2026-07-03 19:44:52 UTC`  
+> Report: `2026-07-03 22:14:07 UTC`  
+> Generated: `2026-07-03 22:14:26 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
@@ -18,14 +18,15 @@
 | 4H | 📈 Bullish |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `46 / 100`  
+**Market Readiness:** `45 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 AAVE** | 51 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **🆕 CL** | 69 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
+| **🆕 AAVE** | 72 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 ## ⚡ Emerging
 
@@ -39,20 +40,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 XPL** | 1 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
-| **🆕 BEAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 BASED** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 ZKP** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 PIPPIN** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 SLX** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 UB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 XPL** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ALLO** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ZKP** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 LAB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 31 | 7 | 12 | 0 |
-| 4H | 29 | 4 | 17 | 0 |
-| 1D | 4 | 5 | 38 | 0 |
+| 1H | 34 | 7 | 10 | 0 |
+| 4H | 31 | 3 | 17 | 0 |
+| 1D | 4 | 5 | 39 | 0 |
 
 ## 📌 Summary
 
