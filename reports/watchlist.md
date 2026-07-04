@@ -1,31 +1,29 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-04 03:57:32 UTC`  
-> Generated: `2026-07-04 03:57:45 UTC`  
+> Report: `2026-07-04 08:49:21 UTC`  
+> Generated: `2026-07-04 08:49:39 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **BTC** | 37 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
 | **ETH** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **SOL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **SOL** | 28 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
 
 | Cycle | Bias |
 | --- | --- |
-| 1H | 📈 Bullish |
+| 1H | ⚪ Mixed |
 | 4H | 📈 Bullish |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `50 / 100`  
+**Market Readiness:** `55 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
-| Symbol | Score | Δ | Window | Lifecycle | Reason |
-| --- | ---: | ---: | --- | --- | --- |
-| **🆕 CL** | 74 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+_No candidates._
 
 ## ⚡ Emerging
 
@@ -39,20 +37,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 UB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 SOXL** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 ADA** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 ZKP** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 LAB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 PIPPIN** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 PEPE** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 GRASS** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 NEAR** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ALLO** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 23 | 4 | 20 | 0 |
-| 4H | 30 | 5 | 12 | 0 |
-| 1D | 4 | 5 | 36 | 0 |
+| 1H | 15 | 2 | 27 | 0 |
+| 4H | 28 | 5 | 11 | 0 |
+| 1D | 5 | 4 | 34 | 0 |
 
 ## 📌 Summary
 
