@@ -1,16 +1,16 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-08 03:38:46 UTC`  
-> Generated: `2026-07-08 03:39:04 UTC`  
+> Report: `2026-07-08 08:42:22 UTC`  
+> Generated: `2026-07-08 08:42:40 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 55 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **ETH** | 32 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
-| **SOL** | 27 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **BTC** | 46 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **ETH** | 28 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **SOL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -18,16 +18,15 @@
 | 4H | ⚪ Mixed |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `50 / 100`  
-📌 适合维护观察名单，不适合追逐已经走远的趋势。
+**Market Readiness:** `42 / 100`  
+📌 多数窗口已离开压缩区，优先等待下一轮重新缠绕。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 XAU** | 57 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 BNB** | 47 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
-| **🆕 AMD** | 44 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 NVDA** | 69 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 UNI** | 53 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
 
 ## ⚡ Emerging
 
@@ -41,20 +40,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 BLUR** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 AGLD** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 TRIA** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 CHIP** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ADA** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 LDO** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 YFI** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 LAB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 XPL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 BLUR** | 0 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
+| **🆕 JTO** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 5 | 36 | 19 | 2 |
-| 4H | 7 | 20 | 34 | 1 |
-| 1D | 6 | 17 | 35 | 1 |
+| 1H | 4 | 50 | 10 | 0 |
+| 4H | 6 | 26 | 32 | 0 |
+| 1D | 4 | 20 | 36 | 1 |
 
 ## 📌 Summary
 
