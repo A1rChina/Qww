@@ -1,29 +1,33 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-08 11:12:45 UTC`  
-> Generated: `2026-07-08 11:13:08 UTC`  
+> Report: `2026-07-08 14:36:16 UTC`  
+> Generated: `2026-07-08 14:36:46 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 47 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **ETH** | 30 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **BTC** | 38 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **ETH** | 27 | 🆕 | 🔥 | Preparing | 方向未确认，低优先观察 |
 | **SOL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 | Cycle | Bias |
 | --- | --- |
 | 1H | 📉 Bearish |
-| 4H | ⚪ Mixed |
+| 4H | 📉 Bearish |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `40 / 100`  
-📌 多数窗口已离开压缩区，优先等待下一轮重新缠绕。
+**Market Readiness:** `48 / 100`  
+📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
-_No candidates._
+| Symbol | Score | Δ | Window | Lifecycle | Reason |
+| --- | ---: | ---: | --- | --- | --- |
+| **🆕 NVDA** | 64 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 LTC** | 56 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 QQQ** | 43 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 ## ⚡ Emerging
 
@@ -37,20 +41,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 BASED** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 BLUR** | 0 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
-| **🆕 YFI** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 JTO** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 SNDK** | 1 | 🆕 | 🔥 | Preparing | 窗口已过，只等回踩/回压 |
 | **🆕 HMSTR** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 GRASS** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 JTO** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 BLUR** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 | **🆕 XPL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 5 | 52 | 7 | 0 |
-| 4H | 6 | 26 | 32 | 0 |
-| 1D | 5 | 20 | 35 | 1 |
+| 1H | 5 | 35 | 23 | 0 |
+| 4H | 7 | 25 | 31 | 0 |
+| 1D | 5 | 20 | 34 | 1 |
 
 ## 📌 Summary
 
