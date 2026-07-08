@@ -1,16 +1,16 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-07 22:20:47 UTC`  
-> Generated: `2026-07-07 22:21:04 UTC`  
+> Report: `2026-07-08 03:38:46 UTC`  
+> Generated: `2026-07-08 03:39:04 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 48 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **ETH** | 75 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
-| **SOL** | 37 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **BTC** | 55 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **ETH** | 32 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **SOL** | 27 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -18,16 +18,16 @@
 | 4H | ⚪ Mixed |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `52 / 100`  
+**Market Readiness:** `50 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 TAO** | 65 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 BNB** | 61 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 FIL** | 49 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 XAU** | 57 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 BNB** | 47 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 AMD** | 44 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
 
 ## ⚡ Emerging
 
@@ -41,20 +41,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 TRIA** | 0 | 🆕 | ⚠️ | Running | 趋势延续，不追 |
-| **🆕 YFI** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 LAB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 ZEC** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 BLUR** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 CHIP** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 AGLD** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 TRIA** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 YFI** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 LAB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 XPL** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 4 | 32 | 26 | 0 |
-| 4H | 8 | 18 | 36 | 0 |
-| 1D | 8 | 17 | 32 | 1 |
+| 1H | 5 | 36 | 19 | 2 |
+| 4H | 7 | 20 | 34 | 1 |
+| 1D | 6 | 17 | 35 | 1 |
 
 ## 📌 Summary
 
