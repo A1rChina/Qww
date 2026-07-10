@@ -1,16 +1,16 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-10 14:48:58 UTC`  
-> Generated: `2026-07-10 14:49:34 UTC`  
+> Report: `2026-07-10 17:04:55 UTC`  
+> Generated: `2026-07-10 17:05:16 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 43 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **ETH** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **SOL** | 34 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **BTC** | 40 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **ETH** | 0 | 🆕 | 🔥 | Preparing | 趋势延续，不追 |
+| **SOL** | 40 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -18,25 +18,30 @@
 | 4H | ⚪ Mixed |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `60 / 100`  
+**Market Readiness:** `54 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 SKHYNIX** | 59 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
-| **🆕 BNB** | 100 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 XRP** | 91 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 HYPE** | 68 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 DOGE** | 67 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
+| **🆕 XRP** | 83 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 | **🆕 XAG** | 83 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 DOGE** | 69 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 XLM** | 62 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **🆕 DRAM** | 57 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **🆕 LTC** | 52 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 MU** | 77 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 XAU** | 75 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 DRAM** | 70 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 WLD** | 68 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 TRUMP** | 68 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 ## ⚡ Emerging
 
-_No candidates._
+| Symbol | Score | Δ | Window | Lifecycle | Reason |
+| --- | ---: | ---: | --- | --- | --- |
+| **🆕 BNB** | 45 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 XLM** | 65 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 KORU** | 53 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 ## 🔄 Reverse Watch
 
@@ -46,20 +51,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 SLX** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 BEAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 KAT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 KAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 BEAT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 | **🆕 LAB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 ARB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 SENT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 EDGE** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 PEPE** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 TRIA** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 10 | 11 | 29 | 3 |
-| 4H | 10 | 12 | 30 | 1 |
-| 1D | 5 | 15 | 31 | 0 |
+| 1H | 19 | 9 | 26 | 2 |
+| 4H | 15 | 10 | 30 | 1 |
+| 1D | 6 | 18 | 30 | 0 |
 
 ## 📌 Summary
 
