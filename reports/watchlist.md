@@ -1,16 +1,16 @@
 # 🐊 OKX Alligator Dynamic Watchlist
 
-> Report: `2026-07-10 09:51:17 UTC`  
-> Generated: `2026-07-10 09:51:31 UTC`  
+> Report: `2026-07-10 14:48:58 UTC`  
+> Generated: `2026-07-10 14:49:34 UTC`  
 > Mode: `Dynamic Watchlist`
 
 ## 🌍 Market Snapshot
 
 | Benchmark | Score | Δ | Window | Lifecycle | Note |
 | --- | ---: | ---: | --- | --- | --- |
-| **BTC** | 9 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **BTC** | 43 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
 | **ETH** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **SOL** | 32 | 🆕 | 🧩 | Watching | 方向未确认，低优先观察 |
+| **SOL** | 34 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
 
 | Cycle | Bias |
 | --- | --- |
@@ -18,18 +18,21 @@
 | 4H | ⚪ Mixed |
 | 1D | ⚪ Mixed |
 
-**Market Readiness:** `59 / 100`  
+**Market Readiness:** `60 / 100`  
 📌 适合维护观察名单，不适合追逐已经走远的趋势。
 
 ## 🎯 Active Watchlist
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 NEAR** | 73 | 🆕 | 🔥 | Preparing | 仍在压缩，Close贴近三线 |
-| **🆕 WLD** | 51 | 🆕 | 🔥 | Preparing | 方向未确认，低优先观察 |
-| **🆕 EWY** | 83 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
-| **🆕 XRP** | 49 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
-| **🆕 NVDA** | 45 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 SKHYNIX** | 59 | 🆕 | 🔥 | Preparing | 刚脱离混沌，距离仍可控 |
+| **🆕 BNB** | 100 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 XRP** | 91 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 XAG** | 83 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 DOGE** | 69 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
+| **🆕 XLM** | 62 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 DRAM** | 57 | 🆕 | 🧩 | Watching | 多周期未确认，仍可观察 |
+| **🆕 LTC** | 52 | 🆕 | 🧩 | Watching | 仍在压缩，Close贴近三线 |
 
 ## ⚡ Emerging
 
@@ -43,20 +46,20 @@ _No candidates._
 
 | Symbol | Score | Δ | Window | Lifecycle | Reason |
 | --- | ---: | ---: | --- | --- | --- |
-| **🆕 EDGE** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 SENT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
-| **🆕 LAB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 SLX** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 BEAT** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
 | **🆕 KAT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 TRIA** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
-| **🆕 ARB** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
+| **🆕 LAB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 ARB** | 0 | 🆕 | ⚠️ | Missed | 窗口已过，只等回踩/回压 |
+| **🆕 SENT** | 0 | 🆕 | ❌ | Running | 趋势延续，不追 |
 
 ## 📊 Market Breadth
 
 | TF | 📈 Bull | 📉 Bear | ⚪ Mixed | 💤 Sleeping |
 | --- | ---: | ---: | ---: | ---: |
-| 1H | 22 | 3 | 22 | 5 |
-| 4H | 8 | 8 | 36 | 0 |
-| 1D | 6 | 16 | 28 | 0 |
+| 1H | 10 | 11 | 29 | 3 |
+| 4H | 10 | 12 | 30 | 1 |
+| 1D | 5 | 15 | 31 | 0 |
 
 ## 📌 Summary
 
